@@ -207,8 +207,3 @@ The assignment submission uses partA/, partB/, partC/ and partD/.
 Exclude model bundles, datasets, databases, MLflow artifacts and virtual
 environments from the final ZIP.
 
-## Attribution
-
-eta_data.py and load_test.py are unchanged files from the supplied
-Module4_Assignment_Starter. Implementation and terminal guidance were
-prepared with OpenAI Codex assistance.
