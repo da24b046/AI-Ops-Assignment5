@@ -1,0 +1,41 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/navadeep04/AIops/bin/python
+cachedir: .pytest_cache
+rootdir: /home/navadeep04/AI_Ops_Assigments/AI-Ops-Assignment5
+configfile: pytest.ini
+plugins: anyio-4.14.2, hydra-core-1.3.5
+collecting ... collected 18 items
+
+partB/test_gate.py::test_all_criteria_pass PASSED                        [  5%]
+partB/test_gate.py::test_exact_boundary_passes[mae-97.0-overall_mae] PASSED [ 11%]
+partB/test_gate.py::test_exact_boundary_passes[p95_ms-10.0-latency] PASSED [ 16%]
+partB/test_gate.py::test_exact_boundary_passes[mae_rush-105.0-rush_slice] PASSED [ 22%]
+partB/test_gate.py::test_exact_boundary_passes[mae_rain-105.0-rain_slice] PASSED [ 27%]
+partB/test_gate.py::test_just_inside_threshold_passes[mae-96.9999] PASSED [ 33%]
+partB/test_gate.py::test_just_inside_threshold_passes[p95_ms-9.9999] PASSED [ 38%]
+partB/test_gate.py::test_just_inside_threshold_passes[mae_rush-104.9999] PASSED [ 44%]
+partB/test_gate.py::test_just_inside_threshold_passes[mae_rain-104.9999] PASSED [ 50%]
+partB/test_gate.py::test_just_outside_threshold_blocks_promotion[mae-97.0001-overall_mae] PASSED [ 55%]
+partB/test_gate.py::test_just_outside_threshold_blocks_promotion[p95_ms-10.0001-latency] PASSED [ 61%]
+partB/test_gate.py::test_just_outside_threshold_blocks_promotion[mae_rush-105.0001-rush_slice] PASSED [ 66%]
+partB/test_gate.py::test_just_outside_threshold_blocks_promotion[mae_rain-105.0001-rain_slice] PASSED [ 72%]
+partB/test_gate.py::test_strict_gain_rejects_ten_percent_improvement PASSED [ 77%]
+partB/test_gate.py::test_sixty_percent_gain_boundary[40.0-True] PASSED   [ 83%]
+partB/test_gate.py::test_sixty_percent_gain_boundary[40.0001-False] PASSED [ 88%]
+partB/test_gate.py::test_gain_is_relative_not_absolute PASSED            [ 94%]
+partB/test_gate.py::test_latency_limit_applies_to_candidate PASSED       [100%]
+
+=============================== warnings summary ===============================
+../../AIops/lib/python3.14/site-packages/anyio/pytest_plugin.py:14
+  /home/navadeep04/AIops/lib/python3.14/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+../../AIops/lib/python3.14/site-packages/mlflow/pyfunc/utils/data_validation.py:187
+  /home/navadeep04/AIops/lib/python3.14/site-packages/mlflow/pyfunc/utils/data_validation.py:187: UserWarning: [33mAdd type hints to the `predict` method to enable data validation and automatic signature inference during model logging. Check https://mlflow.org/docs/latest/model/python_model.html#type-hint-usage-in-pythonmodel for more details.[0m
+    color_warning(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 18 passed, 2 warnings in 0.98s ========================

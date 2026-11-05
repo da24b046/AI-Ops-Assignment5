@@ -1,0 +1,8 @@
+{
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13620H",
+  "logical_cpu_cores": 16,
+  "ram_gib": 14.82,
+  "python_version": "3.14.4",
+  "python_executable": "/home/navadeep04/AIops/bin/python",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43"
+}

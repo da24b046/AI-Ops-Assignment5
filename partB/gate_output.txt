@@ -1,0 +1,60 @@
+/home/navadeep04/AIops/lib/python3.14/site-packages/mlflow/pyfunc/utils/data_validation.py:187: UserWarning: [33mAdd type hints to the `predict` method to enable data validation and automatic signature inference during model logging. Check https://mlflow.org/docs/latest/model/python_model.html#type-hint-usage-in-pythonmodel for more details.[0m
+  color_warning(
+{
+  "default": {
+    "metrics": {
+      "prod": {
+        "mae": 11.9553,
+        "mae_rush": 19.679859894921194,
+        "mae_rain": 11.622736418511066,
+        "p95_ms": 0.9542055005113069
+      },
+      "candidate": {
+        "mae": 6.104850000000001,
+        "mae_rush": 8.579509632224168,
+        "mae_rain": 6.285311871227364,
+        "p95_ms": 0.936205100879306
+      }
+    },
+    "thresholds": {
+      "min_rel_gain": 0.03,
+      "max_p95_ms": 10.0,
+      "max_slice_regression": 0.05
+    },
+    "criteria": {
+      "overall_mae": true,
+      "latency": true,
+      "rush_slice": true,
+      "rain_slice": true
+    },
+    "promote": true
+  },
+  "strict_gain_0.60": {
+    "metrics": {
+      "prod": {
+        "mae": 11.9553,
+        "mae_rush": 19.679859894921194,
+        "mae_rain": 11.622736418511066,
+        "p95_ms": 0.9558247497807313
+      },
+      "candidate": {
+        "mae": 6.104850000000001,
+        "mae_rush": 8.579509632224168,
+        "mae_rain": 6.285311871227364,
+        "p95_ms": 0.9041484505360131
+      }
+    },
+    "thresholds": {
+      "min_rel_gain": 0.6,
+      "max_p95_ms": 10.0,
+      "max_slice_regression": 0.05
+    },
+    "criteria": {
+      "overall_mae": false,
+      "latency": true,
+      "rush_slice": true,
+      "rain_slice": true
+    },
+    "promote": false
+  }
+}

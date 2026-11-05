@@ -1,0 +1,16 @@
+.venv/
+venv/
+.env
+__pycache__/
+.pytest_cache/
+data/
+mlruns/
+mlartifacts/
+*.db
+*.db-*
+*.joblib
+*.log
+*.pid
+Module4_*.zip
+
+STARTER_README.md

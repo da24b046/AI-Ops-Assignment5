@@ -1,0 +1,12 @@
+[
+  {
+    "version": "1",
+    "bundle": "v1",
+    "alias": "prod"
+  },
+  {
+    "version": "2",
+    "bundle": "v2",
+    "alias": "candidate"
+  }
+]

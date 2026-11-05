@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "check": "Single prediction is finite and nonnegative",
+      "passed": true
+    },
+    {
+      "check": "Request ID matches between header and body",
+      "passed": true
+    },
+    {
+      "check": "Model sanity: longer distance increases ETA",
+      "passed": true
+    },
+    {
+      "check": "Model sanity: heavier traffic does not reduce ETA",
+      "passed": true
+    },
+    {
+      "check": "Invalid input returns HTTP 422",
+      "passed": true
+    },
+    {
+      "check": "All predictions use expected version v1",
+      "passed": true
+    },
+    {
+      "check": "p95 1.990 ms <= 80.000 ms (30 timed requests)",
+      "passed": true
+    }
+  ],
+  "p95_ms": 1.990356000533211,
+  "expected_version": "v1",
+  "passed": true
+}

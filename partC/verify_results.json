@@ -1,0 +1,12 @@
+{
+  "ray_cpu_limit": 2.0,
+  "distinct_customers": 1000,
+  "candidate_count": 192,
+  "candidate_share": 0.192,
+  "repeat_customers": 200,
+  "redeploy_customers": 200,
+  "candidate_moved_back": 0,
+  "beta_override": 50,
+  "normal_assignment_restored": true,
+  "passed": true
+}

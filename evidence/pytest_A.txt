@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/navadeep04/AIops/bin/python
+cachedir: .pytest_cache
+rootdir: /home/navadeep04/AI_Ops_Assigments/AI-Ops-Assignment5
+configfile: pytest.ini
+plugins: anyio-4.14.2, hydra-core-1.3.5
+collecting ... collected 28 items
+
+partA/test_eta_app.py::test_valid_prediction PASSED                      [  3%]
+partA/test_eta_app.py::test_batch_preserves_order PASSED                 [  7%]
+partA/test_eta_app.py::test_out_of_range_values[distance_km-0.09-500.01] PASSED [ 10%]
+partA/test_eta_app.py::test_out_of_range_values[n_stops-0-61] PASSED     [ 14%]
+partA/test_eta_app.py::test_out_of_range_values[hour--1-24] PASSED       [ 17%]
+partA/test_eta_app.py::test_out_of_range_values[weekday--1-7] PASSED     [ 21%]
+partA/test_eta_app.py::test_out_of_range_values[traffic_index--0.01-1.01] PASSED [ 25%]
+partA/test_eta_app.py::test_out_of_range_values[rain--1-2] PASSED        [ 28%]
+partA/test_eta_app.py::test_out_of_range_values[weight_kg-0-1000.01] PASSED [ 32%]
+partA/test_eta_app.py::test_missing_feature PASSED                       [ 35%]
+partA/test_eta_app.py::test_wrong_feature_type PASSED                    [ 39%]
+partA/test_eta_app.py::test_fractional_integer_rejected PASSED           [ 42%]
+partA/test_eta_app.py::test_infeasible_delivery PASSED                   [ 46%]
+partA/test_eta_app.py::test_feasibility_boundary_allowed[changes0] PASSED [ 50%]
+partA/test_eta_app.py::test_feasibility_boundary_allowed[changes1] PASSED [ 53%]
+partA/test_eta_app.py::test_batch_size_limits[0-422] PASSED              [ 57%]
+partA/test_eta_app.py::test_batch_size_limits[1-200] PASSED              [ 60%]
+partA/test_eta_app.py::test_batch_size_limits[500-200] PASSED            [ 64%]
+partA/test_eta_app.py::test_batch_size_limits[501-422] PASSED            [ 67%]
+partA/test_eta_app.py::test_request_id_echo_on_success_and_error[True] PASSED [ 71%]
+partA/test_eta_app.py::test_request_id_echo_on_success_and_error[False] PASSED [ 75%]
+partA/test_eta_app.py::test_generated_request_id_on_success_and_error[True] PASSED [ 78%]
+partA/test_eta_app.py::test_generated_request_id_on_success_and_error[False] PASSED [ 82%]
+partA/test_eta_app.py::test_generated_request_ids_are_distinct PASSED    [ 85%]
+partA/test_eta_app.py::test_metrics_and_scrape_exclusion PASSED          [ 89%]
+partA/test_eta_app.py::test_inference_exception_returns_generic_500 PASSED [ 92%]
+partA/test_eta_app.py::test_health_endpoint PASSED                       [ 96%]
+partA/test_eta_app.py::test_unknown_route_has_request_id PASSED          [100%]
+
+=============================== warnings summary ===============================
+../../AIops/lib/python3.14/site-packages/anyio/pytest_plugin.py:14
+  /home/navadeep04/AIops/lib/python3.14/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+../../AIops/lib/python3.14/site-packages/joblib/numpy_pickle.py:207
+../../AIops/lib/python3.14/site-packages/joblib/numpy_pickle.py:207
+../../AIops/lib/python3.14/site-packages/joblib/numpy_pickle.py:207
+../../AIops/lib/python3.14/site-packages/joblib/numpy_pickle.py:207
+  /home/navadeep04/AIops/lib/python3.14/site-packages/joblib/numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+  As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+    array.shape = self.shape
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 28 passed, 5 warnings in 0.81s ========================

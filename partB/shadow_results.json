@@ -1,0 +1,14 @@
+{
+  "paired_requests": 200,
+  "warmup_requests_per_server": 5,
+  "verified_versions": {
+    "prod": "v1",
+    "candidate": "v2"
+  },
+  "mean_absolute_difference_minutes": 9.4845,
+  "percentage_difference_gt_10_minutes": 35.0,
+  "p95_ms": {
+    "prod": 2.89052569969499,
+    "candidate": 2.8390494991072046
+  }
+}

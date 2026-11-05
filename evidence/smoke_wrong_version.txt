@@ -1,0 +1,43 @@
+PASS: Single prediction is finite and nonnegative
+PASS: Request ID matches between header and body
+PASS: Model sanity: longer distance increases ETA
+PASS: Model sanity: heavier traffic does not reduce ETA
+PASS: Invalid input returns HTTP 422
+FAIL: All predictions use expected version v999
+PASS: p95 2.678 ms <= 80.000 ms (30 timed requests)
+
+{
+  "checks": [
+    {
+      "check": "Single prediction is finite and nonnegative",
+      "passed": true
+    },
+    {
+      "check": "Request ID matches between header and body",
+      "passed": true
+    },
+    {
+      "check": "Model sanity: longer distance increases ETA",
+      "passed": true
+    },
+    {
+      "check": "Model sanity: heavier traffic does not reduce ETA",
+      "passed": true
+    },
+    {
+      "check": "Invalid input returns HTTP 422",
+      "passed": true
+    },
+    {
+      "check": "All predictions use expected version v999",
+      "passed": false
+    },
+    {
+      "check": "p95 2.678 ms <= 80.000 ms (30 timed requests)",
+      "passed": true
+    }
+  ],
+  "p95_ms": 2.6775710002766573,
+  "expected_version": "v999",
+  "passed": false
+}

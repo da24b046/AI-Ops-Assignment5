@@ -1,0 +1,18 @@
+[
+  {
+    "batch_size": 1,
+    "concurrency": 1,
+    "warmup_requests": 10,
+    "measured_requests": 200,
+    "mean_request_ms": 1.6085422600326638,
+    "ms_per_row": 1.6085422600326638
+  },
+  {
+    "batch_size": 100,
+    "concurrency": 1,
+    "warmup_requests": 10,
+    "measured_requests": 200,
+    "mean_request_ms": 2.1657322850023775,
+    "ms_per_row": 0.021657322850023773
+  }
+]

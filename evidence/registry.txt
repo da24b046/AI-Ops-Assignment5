@@ -1,0 +1,20 @@
+/home/navadeep04/AIops/lib/python3.14/site-packages/mlflow/pyfunc/utils/data_validation.py:187: UserWarning: [33mAdd type hints to the `predict` method to enable data validation and automatic signature inference during model logging. Check https://mlflow.org/docs/latest/model/python_model.html#type-hint-usage-in-pythonmodel for more details.[0m
+  color_warning(
+2026/11/05 15:55:28 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/11/05 15:55:28 INFO mlflow.store.db.utils: Updating database tables
+2026/11/05 15:55:29 INFO mlflow.tracking.fluent: Experiment with name 'swiftparcel-eta' does not exist. Creating a new experiment.
+2026/11/05 15:55:29 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code during deserialization.Consider using a file path (str or Path) instead. See https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/05 15:55:29 INFO mlflow.pyfunc: Validating input example against model signature
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 39568.91it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 11949.58it/s]
+Successfully registered model 'eta-model'.
+Created version '1' of model 'eta-model'.
+2026/11/05 15:55:30 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code during deserialization.Consider using a file path (str or Path) instead. See https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/11/05 15:55:30 INFO mlflow.pyfunc: Validating input example against model signature
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 2381.77it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 2120.48it/s]
+Registered model 'eta-model' already exists. Creating a new version of this model...
+Created version '2' of model 'eta-model'.
+
+Registry table:
+version bundle     alias
+      1     v1      prod
+      2     v2 candidate
